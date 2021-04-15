@@ -38,6 +38,3 @@ Medium article: https://mjbulostin.medium.com/my-first-front-end-project-e711fd7
 ----- Ayurveda section -----
 
 ![Screen Shot 2021-04-15 at 3 16 14 PM](https://user-images.githubusercontent.com/56733715/114927517-8e9ff100-9dff-11eb-99b2-f26aefa0fd30.png)
-
-
->>>>>>> 42045adc1a2b1e873b4bc4ae83aa83f388df0efe
