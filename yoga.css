@@ -1,4 +1,159 @@
-.poses-container {
+.secondary-container {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.80);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.instructors-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.085);
+  opacity: 75%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.reviews-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.085);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  margin-bottom: auto;
+  margin: 0 auto;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.button-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background-color: rgba(255, 255, 255, 0.27);
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  margin-bottom: auto;
+  margin: 0 auto;
+  /* width: 100%; */
+  padding: 15px 0 15px 0;
+  height: 100%;    
+  color: white;   
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.instructors-button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.195);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  margin-bottom: auto;
+  margin: 0 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.clear-button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.195);
+  margin: 0 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  margin-bottom: auto;
+  margin: 0 auto;
+}
+
+.reviews-button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  background-color: rgba(255, 255, 255, 0.195);
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  margin-bottom: auto;
+  margin: 0 auto;
+}
+
+.instructors-button:hover {
+    opacity: 60%;
+    font: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+
+.clear-button:hover {
+    opacity: 60%;
+    font: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+
+.reviews-button:hover {
+    opacity: 60%;
+    font: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+  
+img {
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin: 0 auto;
+  }
+
+  img2 {
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin: 0 auto;
+  }
+
+/* API SECTION//
+
+/* .reviews-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -32,12 +187,11 @@
     margin-top: 5px;  
     text-align: center;
     font-size: 20px;
-    text-align: center;
     font-family: "Lato", sans-serif;
     
   }
 
-  .poses-button {
+  .reviews-button {
   display: flex;
   margin: 0 auto;
   font-size: 25px;
@@ -55,7 +209,7 @@
     font-family: "Lato", sans-serif;
   }
 
-  .poses-button:hover {
+  .reviews-button:hover {
     opacity: 60%;
     font: bold;
     font-family: "Lato", sans-serif;
@@ -67,7 +221,7 @@
     font: bold;
     font-family: "Lato", sans-serif;
     text-align: center;
-  }
+  } */
 
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */

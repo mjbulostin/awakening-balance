@@ -1,41 +1,88 @@
-const yoga_api = document.querySelector(".w3-black");
-// const secondaryContainer = document.querySelector(".products-container");
-// const header = document.querySelector(".header");
+//!<---API SECTION--->!//
 
-// GET POSES section //
+const mainContainer = document.querySelector(".insstructors-container");
+const secondaryContainer = document.querySelector(".reviews-container");
+const header = document.querySelector(".header");
 
-const fetchYogaPoses = async () => {
-  let yogaPoseData = await fetch("https://github.com/rebeccaestes/yoga_api/blob/master/yoga_api.json");
-  let json = await yogaPoseData.json();
+// Fetch Instructors section //
+
+const fetchInstructors = async () => {
+  let instructorData = await fetch("https://fakerapi.it/api/v1/persons?_quantity=7&_locale=fr");
+  let json = await instructorData.json();
   // console.log(json);
   counter = 0;
-  for (let poses of json.data) {
-    // console.log(poses);
-    const getPoses = document.querySelector(".w3-black");
-    const posesCard = document.createElement("w3-wide w3-center");
-    posesCard.className = "poses-card"
+  for (let instructors of json.data) {
+    // console.log(instructors);
+    const getinstructors = document.querySelector(".instructors-container");
+    const instructorsCard = document.createElement("div");
+    instructorsCard.className = "instructors-card"
     
-    const nameOfPoses = document.createElement("h3");
+    const nameOfInstructors = document.createElement("h3");
+    const phone = document.createElement("h3");
+    const email = document.createElement("h3");
+    const address = document.createElement("h3");
     const img = document.createElement("img");
     img.height = "300";
     img.width = "300";
-    img.src = `http://placeimg.com/640/480/poses${counter}`;
-    nameOfPoses.innerHTML = json.data[counter]["firstname"] + " " + json.data[counter]["lastname"];
-    posesCard.append(img, nameOfPoses);
-    getPoses.append(posesCard);
+    img.src = `http://placeimg.com/640/480/people${counter}`;
+    nameOfInstructors.innerHTML = json.data[counter]["firstname"] + " " + json.data[counter]["lastname"];
+    email.innerHTML = json.data[counter]["email"];
+    // phone.innerHTML = json.data[counter]["phone"];
+    instructorsCard.append(img, nameOfInstructors, email);
+    getinstructors.append(instructorsCard);
     counter += 1
           
 }
 
-return json;
-
+  return json;
 };
 
-const posesButton = document.querySelector(".poses-button");
-posesButton.addEventListener("click", ()=>fetchYogaPoses());
+// Fetch Customer Reviews section //
+
+const fetchReviews = async () => {
+  let reviewsData = await fetch("https://fakerapi.it/api/v1/products?_quantity=10");
+  let json2 = await reviewsData.json();
+  console.log(json2);
+  counter = 0;
+
+  for (let review of json2.data) {
+
+    const getReviews = document.querySelector(".reviews-container");
+    const reviewsCard = document.createElement("div");
+    const reviews = document.createElement("h3");
+    const img2 = document.createElement("img2");
+    const description = review.description;
+    const name = review.name;
+
+    reviewsCard.className = "reviews-card"    
+    reviews.className = "reviews";
+    review.innerHTML = review.name;
+               
+    img2.className = "reviews-image";
+    img2.height = "100";
+    img2.width = "140";
+    img2.src = `http://placeimg.com/640/480/1${counter}`;
+    
+    reviewsCard.append(img2, name, description);
+    getReviews.append(reviewsCard);
+    counter += 1
+          
+}
+
+  return json2;
+};
+
+const instructorsButton = document.querySelector(".instructors-button");
+instructorsButton.addEventListener("click", ()=>fetchInstructors());
+
+const reviewsButton = document.querySelector(".reviews-button");
+reviewsButton.addEventListener("click", ()=>fetchReviews());
 
 const clearAll = document.querySelector(".clear-button")
 clearAll.addEventListener("click", () => location.reload())
+
+
+
 
 /* W3.JS 1.04 April 2019 by w3schools.com */
 "use strict";
