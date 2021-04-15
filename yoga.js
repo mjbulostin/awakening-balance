@@ -61,7 +61,7 @@ const fetchReviews = async () => {
     img2.className = "reviews-image";
     img2.height = "100";
     img2.width = "140";
-    img2.src = `http://placeimg.com/640/480/1${counter}`;
+    img2.src = `http://placeimg.com/640/480/people${counter}`;
     
     reviewsCard.append(img2, name, description);
     getReviews.append(reviewsCard);
