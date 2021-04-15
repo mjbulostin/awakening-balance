@@ -151,3 +151,102 @@ img {
     margin: 0 auto;
   }
 
+  h3 {
+    text-align: center;
+  }
+      
+  .mySlides img {
+      width: 50% !important;
+      align-self: flex-end !important;
+      height: 40% !important;
+      object-fit: cover !important;
+      object-position: 50% 80% !important;
+      border-radius: 15px 15px 15px 15px;
+      justify-content: space-around;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto; 
+      margin-bottom: auto;
+      margin: auto;
+      }
+  
+  .w3-image {
+    width: 50% !important;
+    align-self: flex-end !important;
+    height: 40% !important;
+    object-fit: cover !important;
+    object-position: 50% 80% !important;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin: auto;
+  
+  }
+  
+  .w3-black {
+    width: 50% !important;
+    align-self: flex-end !important;
+    height: 40% !important;
+    object-fit: cover !important;
+    object-position: 50% 80% !important;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin: auto;
+    }
+  
+  #about {
+    width: 50% !important;
+    align-self: flex-end !important;
+    height: 40% !important;
+    object-fit: cover !important;
+    object-position: 50% 80% !important;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-around;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    margin: auto;
+  }
+  
+          
+  /* media queries */
+  
+      @media (max-width: 793px) {
+        .mySlides w3-display-container w3-center {
+          height: 20rem;
+        }
+      }
+  
+      @media (max-width: 1000px) {
+        .w3-center {
+          font-size: 18px;
+  
+        }
+  
+      @media (max-width: 1128px) {
+        body {
+          padding: 0;
+        }
+      }
+      
+      @media (max-width: 793px) {
+        .mySlides w3-display-container w3-center {
+          height: 40%;
+          width: 100%;
+        }
+      }
+       
+    }
+
