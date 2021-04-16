@@ -7,7 +7,7 @@ const header = document.querySelector(".header");
 // Fetch Instructors section //
 
 const fetchInstructors = async () => {
-  let instructorData = await fetch("https://fakerapi.it/api/v1/persons?_quantity=7&_locale=fr");
+  let instructorData = await fetch("https://fakerapi.it/api/v1/persons?_quantity=5&_locale=fr");
   let json = await instructorData.json();
   // console.log(json);
   counter = 0;
@@ -24,7 +24,7 @@ const fetchInstructors = async () => {
     const img = document.createElement("img");
     img.height = "300";
     img.width = "300";
-    img.src = `http://placeimg.com/640/480/people${counter}`;
+    img.src = `https://randomuser.me/api/portraits/women/1${counter}.jpg`;
     nameOfInstructors.innerHTML = json.data[counter]["firstname"] + " " + json.data[counter]["lastname"];
     email.innerHTML = json.data[counter]["email"];
     // phone.innerHTML = json.data[counter]["phone"];
@@ -61,7 +61,7 @@ const fetchReviews = async () => {
     img2.className = "reviews-image";
     img2.height = "100";
     img2.width = "140";
-    img2.src = `http://placeimg.com/640/480/people${counter}`;
+    img2.src = `https://randomuser.me/portraits/women/1${counter}.jpg`;
     
     reviewsCard.append(img2, name, description);
     getReviews.append(reviewsCard);
